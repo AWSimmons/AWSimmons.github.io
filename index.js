@@ -12,14 +12,14 @@ class FrontPageViewModel {
             imageSrc: 'server.jpg',
             headline: 'Cybercrime on the rise as server farms hit in nightly raids',
             story: `
-            A number of New Angelino server farms have been left embarassed as hackers have bypassed their security controls, deleting client data and hijacking their processing. Small business owners fear that since these attacks seem localised to New Angeles, it could be the work of protectionist foreign governments. 
+            A number of New Angelino server farms have been left embarassed as hackers have bypassed their security controls, deleting client data and hijacking their processing. Small business owners fear that since these attacks seem localised to New Angeles, it could be the work of protectionist foreign governments destabilising New Angelino competition. 
             `
         },
         {
             imageSrc: 'bb.jpg',
             headline: 'Man Arrested for Flashing',
             story: `
-            Notorious information Broker T. Bagbiter has been arrested by the NAPD on suspicion of exposing himself to women. His lawyer stated that Mr Bagbiter protests his innocence, and believes he was somehow framed for the offense.
+            Notorious information Broker Theophilius Bagbiter has been arrested by the NAPD on suspicion of exposing himself to women. His lawyer stated that Mr Bagbiter protests his innocence, and believes he was somehow framed for the offense. He is currently remanded in custody at Rabotgorod Police station, having declined to post a 100000CR bail.
         `
         },
     ]
