@@ -1,26 +1,26 @@
 class FrontPageViewModel {
     mainStory = {
-        imageSrc: 'crimescene.png',
-        headline: 'Ghost takes eighth victim',
+        imageSrc: 'mugshot.png',
+        headline: 'Ghost suspect to face trial',
         story: `
-        The serial killer known as the Ghost has claimed their eighth kill this year. Monica Kāne, 32, was brutally murdered in her Manta penthouse at around 11pm on July 10th. Community groups are putting pressure on the NAPD to bring this spate of killings to an end. It raises the question: if the risties can't protect themselves from the ghost, who can? See inside for photos exclusive to the Sol. 
+        Esteban Gomez, 34, was today scheduled to face trial in New Angeles Central Criminal Court for nine counts of murder. Police, acting on a tip off from a private detective who asked to remain anonymous, were able to find and capture Gomez in his apartment near Quinde. NAPD spokesperson Angelica Comer stated that they have significant evidence linking Gomez to all eight of the "Ghost" murders as well as that of a New Angeles Sol journalist.
         `
     };
 
     sideStories = [
         {
-            imageSrc: 'sportsmetal2-7299.jpg',
-            headline: 'Fisk takes short position in Haas-Bioroid sports division spinoff',
+            imageSrc: 'serverjpg',
+            headline: 'Cybercrime on the rise as server farms hit in nightly raids',
             story: `
-            "Viewership figures for bioroid sporting events aren't showing the growth that investors want to see" said Fisk, announcing his purchase of over 10 million credits of out-of-the-money put options. Markets reacted with a drop of 2%, wiping billions off the value of this 60% HB owned corporation.
+            A number of New Angelino server farms have been left embarassed as hackers have bypassed their security controls, deleting client data and hijacking their processing. Small business owners fear that since these attacks seem localised to New Angeles, it could be the work of protectionist foreign governments. 
             `
         },
         {
-            imageSrc: 'hedge_fund_alt_art_web.jpg',
-            headline: 'Hedge fund fury over Loonie invasion',
+            imageSrc: 'bb.jpg',
+            headline: 'Man Arrested for Flashing',
             story: `
-            Several New Angelino funds have been left reeling after a Loonie corporation outbid them for High-Frequency rackspace located close to the NASX. One trader, who asked to remain nameless, stated "Fuck the loonies", followed by "wait, that wasn't an official statement".
-            `
+            Notorious information Broker T. Bagbiter has been arrested by the NAPD on suspicion of exposing himself to women. His lawyer stated that Mr Bagbiter protests his innocence, and believes he was somehow framed for the offense.
+        `
         },
     ]
 }
