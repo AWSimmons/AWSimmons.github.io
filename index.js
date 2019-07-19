@@ -3,7 +3,7 @@ class FrontPageViewModel {
         imageSrc: 'mugshot.jpg',
         headline: 'Ghost suspect to face trial',
         story: `
-        Esteban Gomez, 34, was today scheduled to face trial in New Angeles Central Criminal Court for nine counts of murder. Police, acting on a tip off from a private detective who asked to remain anonymous, were able to find and capture Gomez in his apartment near Quinde. NAPD spokesperson Angelica Comer stated that they have significant evidence linking Gomez to all eight of the "Ghost" murders as well as that of a New Angeles Sol journalist.
+        Esteban Gomez, 34, was today scheduled to face trial in New Angeles Central Criminal Court for nine counts of murder. Police, acting on a tip off from a private detective who asked to remain anonymous, were able to find and capture Gomez in his apartment near Quinde. NAPD spokesperson Angelica Comer stated that they have significant evidence linking Gomez to all eight of the "Ghost" murders as well as that of a New Angeles Sol journalist Huang Smerdyakov.
         `
     };
 
