@@ -1,0 +1,16 @@
+<div class="stories">
+    <div class="story-wrapper main-story">
+        <!-- ko component: {
+            name: 'story',
+            params: { story: currentEdition().mainStory }
+        } -->
+        <!-- /ko -->
+    </div>
+    <div class="story-wrapper side-stories" data-bind="foreach: currentEdition().sideStories">
+        <!-- ko component: {
+            name: 'story',
+            params: { story: $data }
+        } -->
+        <!-- /ko -->
+    </div>
+</div>

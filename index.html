@@ -1,29 +1,13 @@
 <head>
-    <script type='text/javascript' src='knockout-3.5.0.js'></script>
-    <link rel="stylesheet" href="main.css" />
+    <script type='text/javascript' src='lib/knockout-3.5.0.js'></script>
+    <script type='text/javascript' src='lib/requirejs.min.js'></script>
+    <link rel="stylesheet" href="styles/main.css" />
 </head>
-
-<div class="content">
-    <div class="newspaper-title">
-        <div class="title-text">The New Angeles Sol</div>
+<body>
+    <sol-header></sol-header>
+    <div class="content">
+        <front-page data-bind="params: {stories}"></front-page>
     </div>
-    <div class="stories">
-        <div class="story-wrapper">
-            <div class="main-story">
-                <img class="news-image" data-bind="attr: { src: mainStory.imageSrc }">
-                <div class="headline" data-bind="text: mainStory.headline"></div>
-                <div class="story-text" data-bind="text: mainStory.story"></div>
-            </div>
-        </div>
-        <div class="story-wrapper">
-            <div class="side-stories" data-bind="foreach: sideStories">
-                <div class="side-story">
-                    <img class="news-image" data-bind="attr: { src: imageSrc }">
-                    <div class="headline" data-bind="text: headline"></div>
-                    <div class="story-text" data-bind="text: story"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<script type='text/javascript' src="index.js"></script>
+    <personal-message></personal-message>
+    <script type="module" src="src/app.js" ></script>
+</body>

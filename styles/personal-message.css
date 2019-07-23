@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.console-overlay {
+  font-family: Khula;
+  font-size: 4em;
+  text-align: center;
+  position: fixed;
+  color: white;
+  background: black;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+  animation: flashing 2s linear 0s infinite;
+  animation-iteration-count:infinite;
+}
+
+@keyframes flashing {
+    0% { display: none; }
+    50% { display: inline-block; }
+}

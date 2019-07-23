@@ -1,0 +1,12 @@
+<head>
+</head>
+<body>
+  <h2 id="confirmation-message"></h2>
+</body>
+
+<script type='text/javascript'>
+    const date = new Date();
+    date.setYear(2030);
+    document.cookie = `user=angela;expires=${date.toUTCString()};path=/`
+    document.getElementById('confirmation-message').innerHTML = `Cookie set: ${document.cookie}`;
+</script>
