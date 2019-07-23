@@ -1,28 +1,58 @@
-@import url(https://fonts.googleapis.com/css?family=Khula:700);
-
 .console-overlay {
-  font-family: Khula;
-  font-size: 4em;
-  text-align: center;
-  position: fixed;
-  color: white;
-  background: black;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
+    font-family: Lucida Console;
+    font-size: 4em;
+    text-align: center;
+    position: fixed;
+    color: white;
+    background: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    animation: flickerin 2s forwards 0s 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .console-underscore {
-   display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
-  animation: flashing 2s linear 0s infinite;
-  animation-iteration-count:infinite;
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+    animation: flashing 1.5s linear 0s infinite;
+    animation-iteration-count:infinite;
 }
 
 @keyframes flashing {
-    0% { display: none; }
-    50% { display: inline-block; }
+    0% { opacity: 0; }
+    49% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes flickerin {
+    0% { opacity: 0; }
+    9% { opacity: 0; }
+    10% { opacity: 1; }
+    11% { opacity: 0; }
+    45% { opacity: 0; }
+    46% { opacity: 1; }
+    47% { opacity: 0; }
+    58% { opacity: 0; }
+    60% { opacity: 1; }
+    62% { opacity: 0; }
+    68% { opacity: 0; }
+    70% { opacity: 1; }
+    73% { opacity: 0; }
+    77% { opacity: 0; }
+    79% { opacity: 1; }
+    84% { opacity: 0; }
+    86% { opacity: 0; }
+    89% { opacity: 1; }
+    94% { opacity: 0; }
+    97% { opacity: 1; }
+    98% { opacity: 0; }
+    100% { opacity: 1; }
 }

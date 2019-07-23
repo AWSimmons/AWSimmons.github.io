@@ -2,9 +2,7 @@ import './story.js';
 import { currentEdition } from './editions-repo.js';
 
 class FrontPageViewModel {
-    constructor() {
-        this.currentEdition = currentEdition;
-    }
+    currentEdition = currentEdition;
 }
 
 ko.components.register('front-page', {

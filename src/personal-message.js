@@ -13,11 +13,21 @@ class PersonalMessageViewModel {
     waiting = true;
     intervalId = null;
 
+    constructor() {
+        if(readCookie('user') === 'angela') {
+            setTimeout(() => {
+                this.shouldBeVisible(true);
+                setTimeout(() => this.startMessages(), 5000);
+            }, 3000);
+        }
+    }
+
     showNextMessage() {
         this.currentMessage(this.messages.shift());
         this.letterCount(0);
         this.waiting = false;
     }
+
     clearMessage() {
         this.letterCount(0);
         if(this.messages.length) {
@@ -25,9 +35,10 @@ class PersonalMessageViewModel {
         } else {
             this.shouldBeVisible(false);
             clearInterval(this.intervalId);
-            document.cookie = `user=`;
+            // document.cookie = `user=`;
         }
     }
+
     startMessages() {
         this.intervalId = window.setInterval(() => {
             if (this.waiting) {
@@ -40,14 +51,6 @@ class PersonalMessageViewModel {
             }
         }, 60);
         this.showNextMessage();
-    }
-    constructor() {
-        if(readCookie('user') === 'angela') {
-            setTimeout(() => {
-                this.shouldBeVisible(true);
-                setTimeout(() => this.startMessages(), 1000);
-            }, 3000);
-        }
     }
 }
 
