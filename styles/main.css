@@ -1,0 +1,12 @@
+@import 'header.css';
+@import 'stories.css';
+@import 'personal-message.css';
+
+body {
+    --content-max-width: 800px;
+    --sans-serif-font-stack: Arial,Helvetica,freesans,sans-serif;
+
+    font-family: var(--sans-serif-font-stack);
+    background-color: lightgrey;
+    margin: 0 0 64px;
+}

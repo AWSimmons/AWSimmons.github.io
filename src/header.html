@@ -1,0 +1,10 @@
+<div class="newspaper-title">
+    <img class="sol-logo" src="images/sol.png"/>
+    <div class="title-text">The New Angeles Sol</div>
+    <div class="show-archives-list" data-bind="click: (d, e) => { isArchivesListVisible(!isArchivesListVisible()); e.stopPropagation(); }">
+        Archives
+        <ul class="archives-drop-down" data-bind="foreach: editions, visible: isArchivesListVisible">
+          <li data-bind="text: date, click: () => $component.currentEdition($data), class: $data.date === $component.currentEdition().date ? 'selected' : ''"></li>
+        </ul>
+    </div>
+</div>

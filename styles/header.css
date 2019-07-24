@@ -1,0 +1,61 @@
+sol-header {
+    background-color: #ffffe0;
+    border-bottom: 1px solid red;
+    display: block;
+}
+
+.sol-logo {
+    height: 90px;
+}
+
+.newspaper-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+}
+
+.newspaper-title .title-text {
+    padding: 24px 0 32px;
+    display: inline-block;
+}
+
+.show-archives-list {
+    font-size: 24px;
+    display: inline-block;
+    cursor: pointer;
+    font-style: italic;
+    text-decoration: underline;
+    padding: 10px;
+    position: relative;
+}
+
+.archives-drop-down {
+    text-align: center;
+    position: absolute;
+    font-style: normal;
+    right: -20px;
+    left: -20px;
+    top: 79px;
+    background: white;
+    list-style: none;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+    font-family: var(--sans-serif-font-stack);
+    background-color: #ffffe0;
+    border: 1px solid red;
+    border-top: 0;
+}
+
+.archives-drop-down li {
+    padding: 10px;
+}
+
+.archives-drop-down li.selected {
+    font-weight: bold;
+}
