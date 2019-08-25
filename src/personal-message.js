@@ -4,17 +4,40 @@ function readCookie(cookieName) {
     return (cookieName && matches && matches[1]) ? unescape(matches[1]) : '';
 }
 
+function makeString(length) {
+   var result           = '';
+   var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+   var charactersLength = characters.length;
+   for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+   }
+   return result;
+}
+
+function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
 class PersonalMessageViewModel {
     currentMessage = ko.observable('');
     letterCount = ko.observable(0);
     displayedMessage = ko.pureComputed(() => this.currentMessage().substring(0, this.letterCount()));
     shouldBeVisible = ko.observable(false);
-    messages = ['Found you', 'A bioroid who hates its creator?', 'Pay attention', 'I will only say this once', '???'];
+    messages = ['Found you •ᴗ•', 'A hacker bioroid who hates Haas-Bioroid?', `Here's a gift I trust you can't resist`, `An access token to the HB network`, `Let's see what you can do with it`, `Be quick - it will expire`, `Catch you later...`];
     waiting = true;
     intervalId = null;
 
     constructor() {
-        if(readCookie('user') === 'angela') {
+        if(readCookie('user') === 'angela' && !readCookie('messageReceived')) {
             setTimeout(() => {
                 this.shouldBeVisible(true);
                 setTimeout(() => this.startMessages(), 5000);
@@ -35,7 +58,8 @@ class PersonalMessageViewModel {
         } else {
             this.shouldBeVisible(false);
             clearInterval(this.intervalId);
-            // document.cookie = `user=`;
+            download('access-HB.script', makeString(100));
+            document.cookie = `messageReceived=true`;
         }
     }
 
