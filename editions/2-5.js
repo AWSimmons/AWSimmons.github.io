@@ -6,6 +6,7 @@ export default {
             The Seisō arcology in San Salvador today entered a state of lockdown for unknown reasons. While communications were inconsistent, it is understood that none of the 40,000 persons in the building were harmed in any way and there is no ongoing emergency.
             Designed by famed architect Taqi El Wahab to include a 5GW fusion reactor and containing hydroponic vegetable farms as well as fisheries producing luxuries from salmon to caviar, the Seisō building is capable of sustaining each of its 20,000 full time inhabitants as well as the employees of Haas Bioroid's second largest R&D and Engineering departments in South America. 
             The Seisō arcology is owned by Seiso REIT, a fully owned subsidiary of Haas-Bioroid GMBH.
+        `
     },
     sideStories: [{
         image: '252.jpg',
