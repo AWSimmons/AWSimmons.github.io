@@ -9,7 +9,7 @@ export default {
     },
     sideStories: [{
         image: '252.jpg',
-        headline: `Another crime solved by clone detective`,
+        headline: 'Another crime solved by clone detective',
         story: `
             Caprice Nisei, the first Jinteki clone to serve in the NAPD, was today responsible for the arrest of alleged cyber-terrorist Jacob Isaacson. A Nisei-line clone equipped with superhuman skills of social judgment, Caprice marks a new high in NAPD-Jinteki cooperation. We look forward to a future where Jinteki helps keep New Angelinos even safer than they are now.
         `
