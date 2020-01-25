@@ -20,12 +20,6 @@ export default {
             Delicious, handcooked food that doesn't cost an arm and a leg. My favourite was a big serving of closed-cap mushrooms for a fiver, that are long smoked to an almost meaty intensity and dressed with dollops of boisterous salsa verde.
             The ingredients are all certified farm-grown - no vat cultured biomass! Use NBN's City Life guide to find your nearest branch.
         `
-    }, {
-        image: '251.jpg',
-        headline: 'Test',
-        story: `
-            Lorem ipsum dolor sit amet
-        `
     }],
     date: '04/07/19'
 };
