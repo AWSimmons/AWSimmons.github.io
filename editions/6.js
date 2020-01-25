@@ -15,7 +15,7 @@ export default {
     `
     }, {
         image: '603.jpg',
-        headline: 'Could this year's El Niño lead to higher energy costs?',
+        headline: `Could this year's El Niño lead to higher energy costs?`,
         story: `
            The El Niño weather pattern has led to storms in the pacific ocean which have disrupted Deuterium shipping to the Chile and New Angeles. Markets predict a 4% increase in per-unit electricity costs as a result of the shortage.
     `
