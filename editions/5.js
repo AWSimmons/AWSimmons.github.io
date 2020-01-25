@@ -12,7 +12,7 @@ export default {
         image: '602.jpeg',
         headline: `Juba chosen as 2x22 Olympic host city`,
         story: `
-          The Jinteki International Olympic Committee revealed today that Juba is to be the host city for the 2x22 Olympics, beating out entries from Chinese Taipei and from Almaty. TIOC officials stated they were hugely impressed with the standards of the sporting venues, but refused to comment on the human rights record of the government of South Sudan.
+          The International Jinteki Olympics Committee revealed today that Juba is to be the host city for the 2x22 Olympics, beating out entries from Chinese Taipei and from Almaty. IJOC officials stated they were hugely impressed with the standards of the sporting venues, but refused to comment on the human rights record of the government of South Sudan.
     `
     }, {
         image: '603.jpg',
