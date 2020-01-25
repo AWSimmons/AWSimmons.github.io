@@ -5,6 +5,7 @@ export default {
         headline: 'NAPD failing to turn arrests into convictions',
         story: `
             This month, NAPD arrest processing is down by 8% on a year-on-year basis. In an exclusive interview to the New Angeles Sol, an NAPD source pointed the finger at Haas-Bioroid, claiming that they are behind on Bioroid evidence processing.
+            A Humanity Labour spokesperson said "This highlights the NAPD's overreliance on bioroid evidence; having to go through a private intermediary for basic evidence is not compatible with the standards New Angelinos are prepared to accept".
         `
     },
     sideStories: [{
